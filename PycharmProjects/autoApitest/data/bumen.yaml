@@ -1,0 +1,8 @@
+- # 创建部门
+  path: &path "/topapi/v2/department/create"
+  data:
+    name: "开发部门001"
+    parent_id: 1
+  validate:
+    errmsg: '父部门下该部门名称已存在: duplicateDeptId = 710707145'
+    errcode: 60021
